@@ -1,0 +1,54 @@
+body{font-size: $normalSize; transition: $transition;}
+
+h1{font-size: 3em;line-height: $lineSpace/1.56;font-weight: 900;}
+h2{font-size: 1.1em;color: $white;font-weight: 600;}
+h3{font-size: 2.2em;color: $black;font-weight: 700;}
+h4{font-size: 1.3em;color: $pink;}
+h5{font-size: 1.3em;color: $pink;}
+h6{font-size: .7em;color: $black;}
+p {font-size: 1em;color: $black;}
+a {color: $green;font-weight: 700;}
+
+h1,h3,h4,h5{font-family: $secondaryFont;}
+h2,h6,p,a,form{font-family: $primaryFont;}
+
+h1,h2,h3,h4,h5,h6,p,a {margin: 0}
+
+h1,h2,h3,h5,h6,a {text-transform: uppercase;}
+
+
+p {line-height: $lineSpace; transition: $transition;}
+
+h3::before {
+	margin-right: $smallGutter/2;
+	color: $pink;
+	font-size: .6em;
+	padding-bottom: .2em;
+	vertical-align: middle;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900; 
+	content: "\f140";
+}
+
+// Media Querys
+
+@media screen and (min-width:$minWidth) {
+	body {
+		font-size: $smallSize;
+	}
+}
+@media screen and (min-width:$normalWidth) {
+	body {
+		font-size: $normalSize;
+	}
+}
+@media screen and (min-width:$mediumWidth) {
+	body {
+		font-size: $mediumSize;
+	}
+}
+@media screen and (min-width:$fullWidth) {
+	body {
+		font-size: $bigSize;
+	}
+}

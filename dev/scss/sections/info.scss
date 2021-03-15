@@ -1,0 +1,28 @@
+.info {
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex-flow: column-reverse;
+		transition: $transition;
+		@media screen and (min-width:$mediumWidth){
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.section-head {
+			@media screen and (min-width:$mediumWidth) {
+				width: 50%;
+			}
+		}
+		.info-content {
+			position: relative;
+			height: 20em;
+			@media screen and (min-width:$normalWidth) {
+				height: 16em;
+			}
+			@media screen and (min-width:$mediumWidth) {
+				width: 50%;
+				height: auto;
+			}
+		}
+	}
+}

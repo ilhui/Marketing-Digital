@@ -1,0 +1,43 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+@import url("https://use.typekit.net/fho3gam.css");
+$primaryFont: 'Work Sans', sans-serif;
+$secondaryFont: 'korolev-condensed', 'Roboto Condensed', sans-serif;
+
+// Sizes
+$smallSize:16px;
+$normalSize:18px;
+$mediumSize:20px;
+$bigSize:22px;
+
+// Linespace
+$lineSpace: 1.53em;
+
+// Color
+$pink: #fe2c55;
+$magent: #f3008f;
+$green: #4ACD5C;
+$white: #f8f8f8;
+$black: #0D0414;
+
+// Gradients
+
+$gradientGreen: linear-gradient(90deg, rgba(184,213,45,1) 0%, rgba(99,188,37,1) 49%, rgba(62,115,25,1) 100%);
+$gradientPink: linear-gradient(158deg, rgba(254,44,85,1) 0%, rgb(249, 22, 154) 35%, rgba(255,0,155,1) 100%);
+
+// Gutters
+$smallGutter: 1rem;
+$normalGutter: 1.5rem;
+$bigGutter: 2rem;
+
+// Border Radius
+$normalRadius: 1.25em;
+
+// Transtitions
+$transition: .3s ease all;
+
+// Breakpoints
+$minWidth: 320px;
+$normalWidth: 480px;
+$mediumWidth: 768px;
+$fullWidth: 1200px;

@@ -1,0 +1,25 @@
+@import "info.scss";
+@import "teachers.scss";
+@import "topics.scss";
+@import "registrer.scss";
+
+// .section-head, .section-footer {
+// 	width: 100%;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// }	
+.section-head {
+	padding: $smallGutter;
+	@media screen and (min-width:$normalWidth) {
+		padding: $normalGutter;
+	}
+}
+.section-head h3{
+	margin-bottom: $normalGutter;
+	@media screen and (min-width:$mediumWidth) {
+		margin-bottom: $bigGutter;
+	}
+}
+.section-head p:first-of-type {
+	margin-bottom: $smallGutter;
+}

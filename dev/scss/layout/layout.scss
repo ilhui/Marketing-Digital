@@ -1,0 +1,49 @@
+@import "nav.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
+// Spaces
+body{
+	background-color: $black;
+	min-width: 320px;
+	position: relative;
+	top: -100px;
+}
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+section {
+	max-width: 100%;
+	padding: $normalGutter;
+}
+
+// Images
+img {
+	max-width: 100%;
+}
+//Lists
+ul {
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: $normalGutter;
+	:nth-last-child(n+2) {
+		margin-bottom: $smallGutter/2;
+	}
+	li {
+		display: flex;
+		flex-direction: wrap;
+		align-items: baseline;
+	}
+	i {
+		margin-right: $smallGutter;
+	}
+}
+// Links
+a {
+	cursor: pointer;
+}
+

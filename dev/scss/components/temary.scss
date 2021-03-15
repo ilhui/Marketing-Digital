@@ -1,0 +1,143 @@
+.temary {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	justify-items: center;
+	grid-gap: $smallGutter/2;
+	@media screen and (min-width:$mediumWidth) {
+		grid-template-columns: 1fr 1fr;
+		width: 90%;
+	}
+	@media screen and (min-width:$fullWidth) {
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 80%;
+	}
+	.temary-item {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		height: 5em;
+		padding: $normalGutter;
+		border-radius: $normalRadius;
+		box-shadow: 0px 0px 20px rgba($color: #4d0b49, $alpha: .3);
+		transition: $transition;
+		opacity: .96;
+		&:hover {
+			box-shadow: 0px 0px 20px rgba($color: #4d0b49, $alpha: .7);
+			opacity: 1;
+		}
+		span {
+			font-family: $primaryFont;
+			color: $green;
+			font-size: .7em;
+			text-transform: uppercase;
+			letter-spacing: .3em;
+			font-weight: 700;
+			margin-bottom: $smallGutter;
+			@media screen and (min-width:$mediumWidth) {
+				margin-bottom: $smallGutter/2;
+			}
+		}
+		h5 {
+			margin: 0;	
+			background: -webkit-linear-gradient($pink, $magent);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			@media screen and (min-width:$fullWidth) {
+				font-size: 1.1em;
+				line-height: $normalGutter;
+			}
+		}
+		p {
+			font-size: .9em;
+			color: $white;
+			font-weight: 700;
+		}
+	}
+}
+
+.modulo-1 {
+	background-image: 
+		linear-gradient(rgba(37, 8, 48, 0.877)0%, $black 80%),
+		url('../assets/img/modulo-1.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-2 {
+	background-image: 
+		linear-gradient(rgba(37, 8, 48, 0.877)0%, $black 80%),
+		url('../assets/img/modulo-2.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-3 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-3.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-4 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-4.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-5 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-5.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-6 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-6.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-7 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-7.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-8 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-8.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-9 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-9.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-10 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-10.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-11 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-11.png');
+	background-position: center center;
+	background-size: cover;
+}
+.modulo-12 {
+	background-image: 
+		linear-gradient(rgba(47, 11, 61, 0.822)0%, $black 80%),
+		url('../assets/img/modulo-12.png');
+	background-position: center center;
+	background-size: cover;
+}

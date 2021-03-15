@@ -1,0 +1,39 @@
+.brands {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	.asmedia {
+		margin-right: $smallGutter;
+		@media screen and (min-width:$normalWidth){
+			margin-right: $bigGutter;
+		}
+		img {
+			min-width: 8em;
+			transition: $transition;
+			@media screen and (min-width:$normalWidth) {
+				min-width: 10em;			
+			}
+		}
+	}
+	.educacion {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		i, p {
+			font-size: .9em;
+			@media screen and (min-width:$normalWidth) {
+				font-size: 1em;
+			}
+		}
+		i {
+			color: $green;
+			margin-right: $smallGutter;
+			@media screen and (min-width:$normalWidth) {
+				margin-right: $normalGutter;
+			}
+		}
+		p {
+			color: $white;
+		}
+	}
+}	

@@ -1,0 +1,11 @@
+section.teachers
+	.container
+		.section-head
+			h3 Instructores
+			p Profesionales en activo del ecosistema digital mexicano e internacional.
+		.teachers-content
+			each teacher in teachers
+				.teachers-item
+					img(src=teacher.image, alt=teacher.name)
+					h4= teacher.name
+					p= teacher.about

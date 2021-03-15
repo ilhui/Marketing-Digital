@@ -1,0 +1,27 @@
+.whatsapp {
+	position: fixed;
+	bottom: 1.5em;
+	right: 1.5em;
+	@media screen and (min-width:$fullWidth) {
+		bottom: 2em;
+		right: 2em;
+	}
+	a {
+		text-align: center;
+		width: 5em;
+		height: 5em;
+		background-color:$green;
+		border-radius: 50%;
+		display: block;
+		&:hover {
+			background-color: $magent;
+		}
+	}
+	i {
+		color: $white;
+		position: relative;
+		top: .08em;
+		font-size: 4em;
+		text-align: center;
+	}
+}

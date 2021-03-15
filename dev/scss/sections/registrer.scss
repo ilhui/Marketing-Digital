@@ -1,0 +1,19 @@
+.registrer {
+	.section-head,
+	.section-footer {
+		padding: $bigGutter $smallGutter;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.registrer-content {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.registrer-content form {
+	display: block;
+	max-width: auto;
+	height: 1000px;
+}

@@ -1,0 +1,51 @@
+header {
+	width: 100%;
+	min-height: 29.54em;
+	display: flex;
+	align-items: center;
+}
+.cover {
+	background-image: 
+		linear-gradient(rgba(0,0,0,.60)0%, $black 100%),
+		url('../assets/img/cover.png');
+	background-position: center center;
+	background-size: cover;
+	.container {
+		width: 85%;
+		@media screen and (min-width:$normalWidth) {
+			width: 90%;
+		}
+		.tag-course {
+			background: $green;
+			background: $gradientGreen;
+			border-radius: $normalRadius $normalRadius $normalRadius 0;
+			max-width: fit-content;
+			padding: .4em $smallGutter;
+			margin-bottom: $smallGutter;
+			@media screen and (min-width:$normalWidth) {
+				padding: .4em $normalGutter;
+			}
+		}
+		.name-course {
+			background: -webkit-linear-gradient($pink, $magent);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin-bottom: $smallGutter;
+			@media screen and (min-width:$mediumWidth) {
+				font-size: 4em;
+			}
+		}
+		.extract-course {
+			color: $white;
+			margin-top: 0;
+			margin-bottom: $normalGutter;
+			width: 100%;
+			@media screen and (min-width:1000px) {
+				width: 50%;
+			}
+		}
+		// .date-course {
+		// 	margin-bottom: $normalGutter;
+		// }	
+	}
+}

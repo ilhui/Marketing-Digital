@@ -1,0 +1,85 @@
+.sticky {
+	.sticky_item {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		&:first-child {
+			margin-right: $smallGutter;
+			@media screen and (min-width:$mediumWidth){
+				flex-direction: row;
+				margin-right: 0;
+			}
+		}
+		.logo img {
+			width: 8em;
+			margin-bottom: $smallGutter/2;
+			@media screen and (min-width:$normalWidth) {
+				margin-bottom: 0;
+			}
+			@media screen and (min-width:$mediumWidth) {
+				width: 10em;
+			}
+		}
+		.educa {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			align-self: flex-end;
+			@media screen and (min-width:$mediumWidth) {
+				align-self: center;
+				padding-left: $smallGutter;
+			}
+			@media screen and (min-width:$fullWidth){
+				padding-left: $normalGutter;
+			}
+			i {
+				color: $green;
+				margin-right: $smallGutter/2;
+				@media screen and (min-width:$mediumWidth) {
+					margin-right: $smallGutter;
+				}
+
+			}
+			p {
+				color: $white;
+			}
+			p , i {
+				font-size: .6em;
+				@media screen and (min-width:$mediumWidth){
+					font-size: .8em;
+				}
+				@media screen and (min-width:$fullWidth){
+					font-size: .9em;
+				}
+			}
+		}
+		.tag p {
+			background: $green;
+			background: $gradientGreen;
+			width: fit-content;
+			padding: .3em $smallGutter;
+			border-radius: $normalRadius $normalRadius $normalRadius 0;
+			color: $white;
+			text-transform: uppercase;
+			font-size: .5em;
+			font-weight: 600;
+			margin-bottom: $smallGutter/2;
+			@media screen and (min-width:$mediumWidth) {
+				font-size: .6em;
+				padding: .2em $smallGutter;
+			}
+		}
+		.title p {
+			background: -webkit-linear-gradient($pink, $magent);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-family: $secondaryFont;
+			text-transform: uppercase;
+			font-size: 1.6em;
+			line-height: .9em;
+			@media screen and (min-width:$mediumWidth) {
+				font-size: 1.8em;
+			}
+		}
+	}
+}

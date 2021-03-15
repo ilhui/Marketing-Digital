@@ -1,0 +1,37 @@
+.bullets {
+	position: absolute;
+	top: -4em;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: auto;
+	max-width: 20em;
+	background: $pink;
+	background: $gradientPink;
+	border-radius: $normalRadius;
+	padding: $normalGutter;
+	box-shadow:  0px 10px 40px #d3246767;
+	@media screen and (min-width:$mediumWidth) {
+		width: auto;
+	}
+	@media screen and (min-width:$fullWidth) {
+		padding: $bigGutter;
+	}
+	li {
+		margin-bottom: $normalGutter/1.2;
+		@media screen and (min-width:$mediumWidth) {
+			margin-bottom: $normalGutter/1.5;
+		}
+		@media screen and (min-width:$fullWidth) {
+			margin-bottom: $normalGutter;
+		}
+		i, p {
+			color: $white;
+		}
+	}
+	> p {
+		margin-left: $bigGutter;
+		font-size: .8em;
+		color: $white;
+	}
+}
