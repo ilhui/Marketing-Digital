@@ -3,11 +3,6 @@
 @import "topics.scss";
 @import "registrer.scss";
 
-// .section-head, .section-footer {
-// 	width: 100%;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// }	
 .section-head {
 	padding: $smallGutter;
 	@media screen and (min-width:$normalWidth) {
