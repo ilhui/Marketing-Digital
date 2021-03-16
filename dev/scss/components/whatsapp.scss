@@ -13,15 +13,16 @@
 		background-color:$green;
 		border-radius: 50%;
 		display: block;
+		box-shadow:  20px 20px 60px #10041a88;
 		&:hover {
-			background-color: $magent;
+			background-color: rgb(6, 167, 0);
 		}
 	}
 	i {
 		color: $white;
 		position: relative;
-		top: .08em;
-		font-size: 4em;
+		top: .06em;
+		font-size: 4.5em;
 		text-align: center;
 	}
 }
