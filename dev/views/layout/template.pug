@@ -2,7 +2,8 @@ include ../config/variables.pug
 doctype html
 html(lang="es")
 	head
-		include analytics.pug
+		include ../meta-tags/analytics.pug
+		include ../meta-tags/open-graph.pug
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -11,6 +12,8 @@ html(lang="es")
 		link(rel="icon" href="favicon.png" type="image/x-icon")
 		script(src='https://kit.fontawesome.com/e921b55e0a.js', crossorigin='anonymous')
 		title Diplomado Online de Marketing Digital
+		meta(name="description" content="Aprende estratégias y herramientas efectivas del Marketing Digital para redes sociales, SEO, e-mail marketing, analíticas y contenidos.")
+		meta(name="keywords" content="diplomado, curso, marketing, digital, marketing digital, online, social media, redes sociales, email marketing, analytics, optmización, web, generación de contenidos, aplicaciones")
 	body
 		include nav.pug
 		include header.pug
