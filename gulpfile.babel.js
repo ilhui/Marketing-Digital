@@ -44,7 +44,7 @@ const cssPlugins = [
 ]
 
 gulp.task('html-min', () => {
-  return gulp
+	return gulp
 		.src('./dev/*.html')
 		.pipe(plumber())
 		.pipe(htmlmin({
@@ -55,7 +55,7 @@ gulp.task('html-min', () => {
 })
 
 gulp.task('styles', () => {
-  return gulp
+	return gulp
 		.src('./dev/css/*.css')
 		.pipe(plumber())
 		.pipe(concat('styles-min.css'))
@@ -65,7 +65,7 @@ gulp.task('styles', () => {
 })
 
 gulp.task('babel', () => {
-  return gulp
+	return gulp
 		.src('./dev/js/*.js')
 		.pipe(plumber())
 		.pipe(concat('scripts-min.js'))
@@ -105,7 +105,7 @@ gulp.task('clean', () => {
 		.src('./public/css/styles.css')
 		.pipe(plumber())
 		.pipe(clean({
-			content: ['./public/*.html']			 
+			content: ['./public/*.html']
 		}))
 		.pipe(gulp.dest('./public/css'))
 })
@@ -115,21 +115,21 @@ gulp.task('imgmin', () => {
 		.src('./dev/assets/img/*')
 		.pipe(plumber())
 		.pipe(imagemin([
-			imagemin.gifsicle({ interlaced: true}),
-			imagemin.mozjpeg({ quality: 30, progressive: true}),
-			imagemin.optipng({optimizationLevel: 1})
+			imagemin.gifsicle({ interlaced: true }),
+			imagemin.mozjpeg({ quality: 30, progressive: true }),
+			imagemin.optipng({ optimizationLevel: 1 })
 		]))
 		.pipe(gulp.dest('./public/assets/img'))
 })
 
 gulp.task('default', () => {
 	server({
-		server:'./public/'
+		server: './public/'
 	})
 	// gulp.watch('./dev/*.html', gulp.series('html-min')).on('change', reload)
 	// gulp.watch('./dev/css/*.css', gulp.series('styles'))
 	gulp.watch('./dev/views/**/*.pug', gulp.series('views')).on('change', reload)
-	gulp.watch('./dev/scss/**/*.scss', gulp.series('sass'))	
+	gulp.watch('./dev/scss/**/*.scss', gulp.series('sass'))
 	gulp.watch('./dev/js/*.js', gulp.series('babel')).on('change', reload)
-	
+
 })
